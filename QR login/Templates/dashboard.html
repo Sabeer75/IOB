@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Overseas Bank</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: white;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+        }
+        
+        .logo-text {
+            margin-left: 10px;
+        }
+        
+        .logo-text h1 {
+            color: #1a4e8e;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .logo-text p {
+            color: #666;
+            font-size: 12px;
+        }
+        
+        .user-info {
+            display: flex;
+            align-items: center;
+        }
+        
+        .welcome-text {
+            margin-right: 15px;
+            text-align: right;
+        }
+        
+        .welcome-text p {
+            color: #1a4e8e;
+            font-size: 14px;
+        }
+        
+        .welcome-text .last-login {
+            color: #666;
+            font-size: 12px;
+        }
+        
+        .user-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+            object-fit: cover;
+        }
+        
+        .india-flag {
+            width: 50px;
+            height: 30px;
+            border: 1px solid #ddd;
+        }
+        
+        .fraud-report {
+            background-color: #e63946;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 100%;
+        }
+        
+        .nav-menu {
+            display: flex;
+            background-color: #1a4e8e;
+            color: white;
+        }
+        
+        .nav-item {
+            padding: 15px;
+            text-align: center;
+            flex: 1;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 12px;
+        }
+        
+        .nav-item i {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        
+        .nav-item:hover {
+            background-color: #15407a;
+        }
+        
+        .nav-item.accounts {
+            background-color: #e63946;
+        }
+        
+        .logout-btn {
+            background-color: #e63946;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logout-btn i {
+            margin-left: 5px;
+        }
+        
+        .change-password {
+            text-align: right;
+            color: #1a4e8e;
+            font-size: 14px;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+        
+        .notification-bar {
+            background-color: #fff3cd;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .new-tag {
+            background-color: #e63946;
+            color: white;
+            padding: 5px 10px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .notification-text {
+            flex: 1;
+            margin-left: 15px;
+            color: #666;
+        }
+        
+        .nps-logo {
+            width: 80px;
+            height: 40px;
+        }
+        
+        .main-content {
+            display: flex;
+            margin: 20px;
+        }
+        
+        .sidebar {
+            width: 250px;
+            background-color: white;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .sidebar-header {
+            background-color: #1a4e8e;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .sidebar-item {
+            padding: 15px;
+            border-bottom: 1px solid #e0e0e0;
+            cursor: pointer;
+            color: #666;
+        }
+        
+        .sidebar-item:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .sidebar-item.active {
+            background-color: #e0e0e0;
+        }
+        
+        .sidebar-item.expandable::after {
+            content: "▼";
+            float: right;
+            font-size: 10px;
+        }
+        
+        .content {
+            flex: 1;
+            margin-left: 20px;
+        }
+        
+        .help-section h2 {
+            color: #1a4e8e;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .help-text {
+            color: #1a4e8e;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .option-list {
+            margin-top: 20px;
+        }
+        
+        .option-item {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        
+        .option-icon {
+            background-color: #1a4e8e;
+            color: white;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            margin-right: 15px;
+        }
+        
+        .option-text {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <div class="logo-container">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-04-08%20at%2010.43.37_fc5fb6db.jpg-UNm8SuOYuVq93vU9dVvmdhmDIQPazr.jpeg" alt="Indian Overseas Bank Logo" class="logo">
+            <div class="logo-text">
+                <h1>Indian Overseas Bank</h1>
+                <p>Good people to grow with</p>
+            </div>
+        </div>
+        
+        <div class="user-info">
+            <div class="welcome-text">
+                <p>Welcome</p>
+                <p class="last-login">Last Login: 08-Apr-2025 10:30 AM</p>
+                <button class="fraud-report">Report Fraudulent Transactions</button>
+            </div>
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-04-08%20at%2010.44.15_1885b07a.jpg-wptIVLptg3QyP5kox4JOLAkiwtMXeN.jpeg" alt="User Profile" class="user-image">
+            <img src="/placeholder.svg?height=30&width=50" alt="India Flag" class="india-flag">
+        </div>
+    </div>
+    
+    <!-- Navigation Menu -->
+    <div class="nav-menu">
+        <div class="nav-item accounts">
+            <i>👤</i>
+            <span>Accounts</span>
+        </div>
+        <div class="nav-item">
+            <i>↔️</i>
+            <span>Remittances</span>
+        </div>
+        <div class="nav-item">
+            <i>👤</i>
+            <span>Edit Profile</span>
+        </div>
+        <div class="nav-item">
+            <i>📄</i>
+            <span>Bill Payments</span>
+        </div>
+        <div class="nav-item">
+            <i>📑</i>
+            <span>Tax Payments</span>
+        </div>
+        <div class="nav-item">
+            <i>💳</i>
+            <span>IOB Cards</span>
+        </div>
+        <div class="nav-item">
+            <i>📃</i>
+            <span>Utility Payment Receipts</span>
+        </div>
+        <div class="nav-item">
+            <i>🏢</i>
+            <span>IPO</span>
+        </div>
+        <div class="nav-item">
+            <i>📑</i>
+            <span>Offers</span>
+        </div>
+        <div class="nav-item">
+            <i>📄</i>
+            <span>Instant Loans</span>
+        </div>
+        <div class="nav-item">
+            <button class="logout-btn">Logout 🔒</button>
+            <div class="change-password">Change Password</div>
+        </div>
+    </div>
+    
+    <!-- Notification Bar -->
+    <div class="notification-bar">
+        <div class="new-tag">NEW</div>
+        <div class="notification-text">
+            Funds Transfer for newly added payee will be enabled only after 4 hours with maximum amount re
+        </div>
+        <img src="/placeholder.svg?height=40&width=80" alt="NPS Logo" class="nps-logo">
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">Accounts</div>
+            <div class="sidebar-item active">Balance Enquiry</div>
+            <div class="sidebar-item">Last Few Transactions</div>
+            <div class="sidebar-item">Account statement</div>
+            <div class="sidebar-item">Cheque Book Request</div>
+            <div class="sidebar-item expandable">Cheque Services</div>
+            <div class="sidebar-item expandable">Pension View</div>
+            <div class="sidebar-item expandable">Deposit</div>
+            <div class="sidebar-item">Nomination</div>
+            <div class="sidebar-item">Loan View</div>
+            <div class="sidebar-item">PPF Loan/Deposit</div>
+            <div class="sidebar-item expandable">Trade Finance View</div>
+        </div>
+        
+        <!-- Content Area -->
+        <div class="content">
+            <div class="help-section">
+                <h2>Help</h2>
+                <div class="help-text">
+                    You can exercise the following options in respect of accounts registered in your login id
+                </div>
+                
+                <div class="option-list">
+                    <div class="option-item">
+                        <div class="option-icon">👍</div>
+                        <div class="option-text">Balance Enquiry.</div>
+                    </div>
+                    
+                    <div class="option-item">
+                        <div class="option-icon">👍</div>
+                        <div class="option-text">Last few Transactions in the account.</div>
+                    </div>
+                    
+                    <div class="option-item">
+                        <div class="option-icon">👍</div>
+                        <div class="option-text">Account statement (Six months).</div>
+                    </div>
+                    
+                    <div class="option-item">
+                        <div class="option-icon">👍</div>
+                        <div class="option-text">Search on cheque number.</div>
+                    </div>
+                    
+                    <div class="option-item">
+                        <div class="option-icon">👍</div>
+                        <div class="option-text">Loan/Deposit/FCNR Deposit/PPF View.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

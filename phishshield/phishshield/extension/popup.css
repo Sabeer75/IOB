@@ -1,0 +1,248 @@
+body {
+    font-family: 'Inter', 'Segoe UI', Roboto, -apple-system, BlinkMacSystemFont, sans-serif;
+    width: 360px;
+    padding: 24px;
+    background: linear-gradient(145deg, #ffffff, #f8f9ff);
+    text-align: center;
+    margin: 0;
+    border-radius: 12px;
+    color: #2d3748;
+    line-height: 1.6;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  }
+  
+  h2 {
+    color: #2b6cb0;
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: -0.02em;
+    position: relative;
+    display: inline-block;
+  }
+  
+  h2::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 3px;
+    background: linear-gradient(90deg, #3182ce, #63b3ed);
+    border-radius: 3px;
+  }
+  
+  h3 {
+    color: #4a5568;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px 16px;
+    margin: 14px 0;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, #4299e1, #2b6cb0);
+    color: white;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(66, 153, 225, 0.25);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: all 0.6s ease;
+  }
+  
+  button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(66, 153, 225, 0.35);
+  }
+  
+  button:hover::before {
+    left: 100%;
+  }
+  
+  button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 8px rgba(66, 153, 225, 0.2);
+  }
+  
+  #scanButton {
+    background: linear-gradient(135deg, #4299e1, #2b6cb0);
+  }
+  
+  #reportButton {
+    background: linear-gradient(135deg, #38b2ac, #2c7a7b);
+    box-shadow: 0 4px 12px rgba(56, 178, 172, 0.25);
+  }
+  
+  #reportButton:hover {
+    box-shadow: 0 6px 16px rgba(56, 178, 172, 0.35);
+  }
+  
+  #verdict, #whoisInfo, #reportStatus {
+    margin-top: 16px;
+    padding: 14px;
+    font-size: 14px;
+    border-left: 4px solid;
+    text-align: left;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+    transition: all 0.4s ease;
+    line-height: 1.5;
+  }
+  
+  .safe { 
+    background-color: #f0fff4; 
+    color: #276749; 
+    border-color: #48bb78; 
+  }
+  
+  .warning { 
+    background-color: #fffaf0; 
+    color: #c05621; 
+    border-color: #ed8936; 
+  }
+  
+  .danger { 
+    background-color: #fff5f5; 
+    color: #c53030; 
+    border-color: #f56565; 
+  }
+  
+  textarea, input {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    padding: 12px 14px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    background-color: rgba(247, 250, 252, 0.8);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.04);
+  }
+  
+  textarea {
+    min-height: 80px;
+    resize: vertical;
+  }
+  
+  textarea:focus, input:focus {
+    outline: none;
+    border-color: #4299e1;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.15), inset 0 2px 4px rgba(0, 0, 0, 0.04);
+    background-color: #ffffff;
+  }
+  
+  hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+    margin: 20px 0;
+    position: relative;
+  }
+  
+  hr::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    background-color: #cbd5e0;
+    border-radius: 50%;
+  }
+  
+  #verdict, #whoisInfo, #reportStatus {
+    animation: fadeIn 0.4s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .logo-container {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .shield-icon {
+    color: #4299e1;
+    font-size: 18px;
+    margin-right: 5px;
+  }
+  
+  .status-container {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .status-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  }
+  
+  .pulse {
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(66, 153, 225, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(66, 153, 225, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(66, 153, 225, 0); }
+  }
+
+  .iob-logo {
+    width: 50px;
+    height: 50px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    object-fit: contain;
+  }
+  
+  body.safe-bg {
+    background: linear-gradient(145deg, #f0fff4, #c6f6d5);
+    transition: background 0.8s ease-in-out;
+}
+
+body.warning-bg {
+    background: linear-gradient(145deg, #fffaf0, #febfbf);
+    transition: background 0.8s ease-in-out;
+}
+
+body.danger-bg {
+    background: linear-gradient(145deg,  #970000,#fff5f5,);
+    transition: background 0.8s ease-in-out;
+}

