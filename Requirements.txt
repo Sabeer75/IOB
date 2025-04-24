@@ -1,0 +1,8 @@
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.4.2
+requests==2.31.0
+Flask==2.3.3
+qrcode==7.4.2
+firebase-admin==6.4.0
+gunicorn==21.2.0
