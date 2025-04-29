@@ -41,6 +41,14 @@ An intelligent phishing detection component that identifies and blocks access to
 
 ---
 
+## Demo Video: 
+https://drive.google.com/file/d/1B5qt2tCqc-1-v3srFK-wi_ClrgvhxC_u/view?usp=sharing
+
+## Presentation PPT:
+https://drive.google.com/file/d/16c8fMhFI_N_jeqZ_-lxYEdU7HLhDvZPK/view?usp=sharing
+
+---
+
 ## 🛠 Setup Instructions
 
 1. Clone the repository:
