@@ -1,10 +1,6 @@
 # AI-Powered-Secure-Authentication-System---IOB 5x
 A  AI-powered secure authentication system designed for the IOB banking platform to reduce password dependency, eliminate SMS vulnerabilities, enable real-time monitoring, and defend against phishing attacks. Built with advanced behavioral biometrics, QR-based login, smart OTP, and phishing detection mechanisms.
 
-# AI-Powered Secure Authentication System for IOB Banking
-
-A complete AI-powered authentication suite designed for the Indian Overseas Bank (IOB) to enhance digital banking security by reducing password dependency, eliminating SMS-based vulnerabilities, enabling real-time behavioral monitoring, and protecting users from phishing threats.
-
 ---
 
 ## Key Features
