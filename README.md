@@ -80,7 +80,7 @@ Setup instructions and description for AdaptiveX will be added here.
 
 ---
 
-### 🔹 2. NeuroBehaviour
+### 🔹 2. NeuroBehaviour & 3. FlowAuth
 
 1. **Start the Node.js server**  
    (Serves the website and routes)
@@ -91,7 +91,7 @@ Setup instructions and description for AdaptiveX will be added here.
 2. **Run the ML model script simultaneously**  
    (Monitors behavioral data in real-time)
    ```bash
-   python neuro_behavior_model.py
+   python NeuroBehaviour Model.py
    ```
 
 3. **Visit the local server**  
@@ -101,27 +101,6 @@ Setup instructions and description for AdaptiveX will be added here.
 4. **Behavioral Monitoring**  
    - Live user data is written to `user_activity.csv`
    - The model reads and analyzes this data continuously
-
----
-
-### 🔹 3. FlowAuth
-
-1. **Start the Node.js server**  
-   ```bash
-   node server.js
-   ```
-
-2. **Run the ML model script**
-   ```bash
-   python neuro_behavior_model.py
-   ```
-
-3. **Visit the Web App**
-   - Open [http://localhost:3000](http://localhost:3000)
-
-4. **Live Activity Tracking**
-   - Your interactions are logged to `user_activity.csv`
-   - The model processes this in real-time to enhance FlowAuth's behavior detection
 
 ---
 
