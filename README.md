@@ -74,10 +74,14 @@ cd IOB
 ---
 
 ### 🔹 1. AdaptiveX
-    - Open the QR LOGIN file
-    - Get your system IP and change it in the code 
-    - Open Terminal and run -- python app.py -- 
-    - Open the link printed in the terminal, usually:  
+    
+  - Open the QR LOGIN file in vs code
+  - Get your system IP and change it in the code 
+  - Open Terminal and run:
+    ```
+     python app.py
+    ```
+  - Open the link printed in the terminal, usually:
       [http://localhost:3000](http://localhost:3000)
 
 ---
@@ -107,8 +111,13 @@ cd IOB
 ---
 
 ### 🔹 4. SmartOTP
-    - 
-
+   - Open Smart OTP file in VS Code 
+   - Open Terminal and run:
+     ```
+     python otp.py
+     ```
+   - Open the project created in firebase to see the reflection of password generation
+   - Connect the MIT app companion to see the OTP Generation
 ---
 
 ### 🔹 5. PhishShield
