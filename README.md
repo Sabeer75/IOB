@@ -74,9 +74,11 @@ cd IOB
 ---
 
 ### 🔹 1. AdaptiveX
-
-> **Coming Soon**  
-Setup instructions and description for AdaptiveX will be added here.
+    - Open the QR LOGIN file
+    - Get your system IP and change it in the code 
+    - Open Terminal and run -- python app.py -- 
+    - Open the link printed in the terminal, usually:  
+      [http://localhost:3000](http://localhost:3000)
 
 ---
 
@@ -105,9 +107,7 @@ Setup instructions and description for AdaptiveX will be added here.
 ---
 
 ### 🔹 4. SmartOTP
-
-> **Coming Soon**  
-Setup instructions and OTP mechanism details will be added here.
+    - 
 
 ---
 
