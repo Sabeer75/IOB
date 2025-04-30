@@ -47,7 +47,94 @@ https://drive.google.com/file/d/16c8fMhFI_N_jeqZ_-lxYEdU7HLhDvZPK/view?usp=shari
 
 ## 🛠 Setup Instructions
 
-1. Clone the repository:
+### 1. Clone the Repository
+```bash
+git clone https://github.com/YourUsername/IOB.git
+cd IOB
+```
+
+---
+
+### 2. Install Dependencies
+
+- **Install Node.js packages**
+  ```bash
+  npm install
+  ```
+
+- **Install Python packages**
+  ```bash
+  pip install -r requirements.txt
+  ```
+
+---
+
+## ⚙️ Solution-wise Setup
+
+---
+
+### 🔹 1. AdaptiveX
+
+> **Coming Soon**  
+Setup instructions and description for AdaptiveX will be added here.
+
+---
+
+### 🔹 2. NeuroBehaviour
+
+1. **Start the Node.js server**  
+   (Serves the website and routes)
    ```bash
-   git clone https://github.com/YourUsername/iob-auth-system.git
-   cd iob-auth-system
+   node server.js
+   ```
+
+2. **Run the ML model script simultaneously**  
+   (Monitors behavioral data in real-time)
+   ```bash
+   python neuro_behavior_model.py
+   ```
+
+3. **Visit the local server**  
+   Open the link printed in the terminal, usually:  
+   [http://localhost:3000](http://localhost:3000)
+
+4. **Behavioral Monitoring**  
+   - Live user data is written to `user_activity.csv`
+   - The model reads and analyzes this data continuously
+
+---
+
+### 🔹 3. FlowAuth
+
+1. **Start the Node.js server**  
+   ```bash
+   node server.js
+   ```
+
+2. **Run the ML model script**
+   ```bash
+   python neuro_behavior_model.py
+   ```
+
+3. **Visit the Web App**
+   - Open [http://localhost:3000](http://localhost:3000)
+
+4. **Live Activity Tracking**
+   - Your interactions are logged to `user_activity.csv`
+   - The model processes this in real-time to enhance FlowAuth's behavior detection
+
+---
+
+### 🔹 4. SmartOTP
+
+> **Coming Soon**  
+Setup instructions and OTP mechanism details will be added here.
+
+---
+
+### 🔹 5. PhishShield
+
+> **Coming Soon**  
+Setup steps and phishing detection logic will be updated here.
+
+---
