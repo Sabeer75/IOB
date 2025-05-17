@@ -1,61 +1,105 @@
-# AI-Powered-Secure-Authentication-System---IOB 5x
-A  AI-powered secure authentication system designed for the IOB banking platform to reduce password dependency, eliminate SMS vulnerabilities, enable real-time monitoring, and defend against phishing attacks. Built with advanced behavioral biometrics, QR-based login, smart OTP, and phishing detection mechanisms.
+# 🚀 AI-Powered Secure Authentication System — **IOB 5x**  
+### 🔒 Reinventing Digital Banking Security for the Indian Overseas Bank (IOB)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🌟 **PSB'S HACKATHON SERIES '25 CHAMPIONS** 🌟
+
+| 🏦 **IOB CYBERNOVA 2025** | 🚀 **TOP 3** | 💰 **₹1,00,000 CASH PRIZE** |
+|---------------------------|---------------|-----------------------------|
+
+**🏆 Awarded 3rd Prize among 100+ teams**  
+in India's premier banking innovation challenge hosted by **Indian Overseas Bank**  
+for revolutionizing public sector banking with AI-driven security solutions!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+## 🔍 Overview
+
+An **AI-powered secure authentication system** tailored for the **IOB banking platform**, engineered to:
+- Eliminate password fatigue
+- Prevent phishing and SIM-swap attacks
+- Enable real-time anomaly detection
+- Leverage behavioral biometrics for zero-trust authentication
+
+Built with next-gen tech — **QR login, dynamic OTP, AI behavioral tracking, and phishing detection** — to redefine digital banking security.
 
 ---
 
-## Key Features
+## 🌟 Key Features
 
-### 1. *AdaptiveX*
-A passwordless QR-based authentication mechanism that allows users to securely log in by scanning a QR code via the IOB mobile app — improving user experience and reducing password fatigue.
+### 🔐 1. AdaptiveX — *Seamless QR-based Login*
+> No passwords. Just scan and go.
 
-### 2. *NeuroBehaviour*
-An AI engine that monitors user behavior such as:
+Secure login via QR scanning using the IOB mobile app. It replaces static credentials with a dynamic, app-based authentication mechanism.
+
+---
+
+### 🧠 2. NeuroBehaviour — *AI Behavioral Biometrics Engine*
+Monitors:
 - Keystroke dynamics
-- Mouse/cursor movement patterns
-- Session duration and interaction flow
+- Mouse movement patterns
+- Interaction flow & session behavior
 
-This behavioral data is analyzed using deep learning to detect anomalies, helping to prevent unauthorized access in real-time.
-
-### 3. *FlowAuth*
-A training module that collects behavioral data from verified sessions. This data trains the NeuroBehaviour model to increase accuracy and user-specific behavior recognition.
-
-### 4. *SmartOTP*
-A dynamic OTP system integrated into the IOB mobile app. OTPs regenerate every 30 seconds and are device-local, removing the need for SMS and thus reducing the risk of SIM-swapping and interception attacks.
-
-### 5. *PhishShield*
-An intelligent phishing detection component that identifies and blocks access to malicious and spoofed banking websites. It uses a combination of domain analysis, content matching, and AI-driven phishing signatures.
+Detects real-time anomalies using an **Isolation Forest** model to prevent unauthorized access, even if credentials are stolen.
 
 ---
 
-## Tech Stack
-
-- *Frontend*: HTML,CSS & JS
-- *Backend*: Flask,Node.js
-- *AI Models*: Isolation Forest Algorithm
-- *Phishing Detection*: Virus total DB, Google safe browsing API
-- *Database*: Goolge FireBase 
+### 🧪 3. FlowAuth — *Behavioral Training Module*
+Feeds verified behavioral session data to NeuroBehaviour, continuously improving AI accuracy and adapting to each individual user’s behavior.
 
 ---
 
-## Demo Video: 
-https://drive.google.com/file/d/1B5qt2tCqc-1-v3srFK-wi_ClrgvhxC_u/view?usp=sharing
-
-## Presentation PPT:
-https://drive.google.com/file/d/16c8fMhFI_N_jeqZ_-lxYEdU7HLhDvZPK/view?usp=sharing
+### 🔄 4. SmartOTP — *SMS-Free Dynamic OTP System*
+Generates rotating OTPs every 30 seconds inside the IOB app — completely offline and SMS-independent, neutralizing:
+- SIM-swapping
+- OTP phishing
+- Network-based attacks
 
 ---
 
-## 🛠 Setup Instructions
+### 🛡️ 5. PhishShield — *AI-Powered Anti-Phishing System*
+Detects and blocks fake banking websites using:
+- Google Safe Browsing API
+- VirusTotal Database
+- Domain heuristics + AI pattern matching  
+> *(Setup coming soon)*
 
-### 1. Clone the Repository
+---
+
+## 🛠 Tech Stack
+
+| Layer       | Technologies                                     |
+|-------------|--------------------------------------------------|
+| Frontend    | HTML, CSS, JavaScript                            |
+| Backend     | Flask (Python), Node.js                          |
+| AI Models   | Isolation Forest (Scikit-learn)                  |
+| Security APIs | Google Safe Browsing, VirusTotal               |
+| Database    | Firebase (Google Cloud)                          |
+
+---
+
+## 📽️ Demo & Presentation
+
+- ▶️ [**Watch Demo Video**](https://drive.google.com/file/d/1B5qt2tCqc-1-v3srFK-wi_ClrgvhxC_u/view?usp=sharing)
+- 📊 [**View Presentation Slides**](https://drive.google.com/file/d/16c8fMhFI_N_jeqZ_-lxYEdU7HLhDvZPK/view?usp=sharing)
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repository
+
 ```bash
 git clone https://github.com/YourUsername/IOB.git
 cd IOB
+
 ```
 
 ---
 
-### 2. Install Dependencies
+### 2️⃣ Install Dependencies
 
 - **Install Node.js packages**
   ```bash
@@ -126,3 +170,36 @@ cd IOB
 Setup steps and phishing detection logic will be updated here.
 
 ---
+
+## 🏅 Achievements
+
+* 🥉 **3rd Prize Winner** at **IOB CYBERNOVE 2025**
+* 💰 Received ₹1,00,000 for innovation in secure digital banking
+* 🌐 Built to support India’s Zero Trust security mission for PSBs
+
+---
+
+## 👨‍💻 Developed By
+
+**🎯 Team:** Exception Handlers
+
+- **Syed Tufail Ahmed**  
+  🔗 [LinkedIn](https://www.linkedin.com/in/syedtufailahmed/) • [GitHub](https://github.com/syedtufailasuspro)
+
+- **Sabeer Sulaiman Khan**  
+  🔗 [LinkedIn](https://www.linkedin.com/in/sabeer-sulaiman-khan-g-957232293/) • [GitHub](https://github.com/Sabeer75)
+
+- **Syed Mustafa**  
+  🔗 [LinkedIn](https://www.linkedin.com/in/syed-mustafa-dev) • [GitHub](https://github.com/syedmustafa)
+
+- **Syed Shabib Ahmed**  
+  🔗 [LinkedIn](https://www.linkedin.com/in/syed-shabib-ahmed) • [GitHub](https://github.com/syedshabib)
+
+**📬 Contact Us:**  
+For collaborations or queries, feel free to reach out via [Gmail](mailto:syedtufailmipro@gmail.com)
+
+---
+
+**🧠 Empowering public sector banks with AI-driven security.**
+**🔐 Because trust shouldn’t rely on passwords.**
+
