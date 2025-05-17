@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/Sabeer75/IOB/blob/main/iob%205x%20logo.png" width="400">
+</p>
+
 # 🚀 AI-Powered Secure Authentication System — **IOB 5x**  
 ### 🔒 Reinventing Digital Banking Security for the Indian Overseas Bank (IOB)
 
