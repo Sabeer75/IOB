@@ -194,10 +194,10 @@ Setup steps and phishing detection logic will be updated here.
   🔗 [LinkedIn](https://www.linkedin.com/in/sabeer-sulaiman-khan-g-957232293/) • [GitHub](https://github.com/Sabeer75)
 
 - **Syed Mustafa**  
-  🔗 [LinkedIn](https://www.linkedin.com/in/syedmustafa29/) • [GitHub](https://github.com/syedmustafa)
+  🔗 [LinkedIn](https://www.linkedin.com/in/syedmustafa29/) • [Github](https://github.com/MUSTAFAOP29)
 
 - **Syed Shabib Ahmed**  
-  🔗 [LinkedIn](https://www.linkedin.com/in/syed-shabib-ahamed-b673b0225/) • [GitHub](https://github.com/syedshabib)
+  🔗 [LinkedIn](https://www.linkedin.com/in/syed-shabib-ahamed-b673b0225/) • [GitHub](https://github.com/Shabib6)
 
 **📬 Contact Us:**  
 For collaborations or queries, feel free to reach out via [Gmail](mailto:syedtufailmipro@gmail.com)
